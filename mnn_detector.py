@@ -7,8 +7,8 @@ from tracker import Tracker
 
 
 class Detector:
-    def __init__(self, detection_size=(160, 160)):
-        self.interpreter = MNN.Interpreter("pretrained_weights/slim_160_latest.mnn")
+    def __init__(self, detection_size=(96, 96)):
+        self.interpreter = MNN.Interpreter("pretrained_weights/slim_96_latest.mnn")
         self.session = self.interpreter.createSession()
         self.input_tensor = self.interpreter.getSessionInput(self.session)
         self.detection_size = detection_size
