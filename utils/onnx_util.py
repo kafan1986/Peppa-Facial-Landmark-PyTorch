@@ -2,7 +2,7 @@ import torch
 import torch.onnx
 from models.slim import Slim
 
-x = torch.randn(1, 3, 160, 160)
+x = torch.randn(1, 3, 96, 96)
 model = Slim()
 model.load_state_dict(torch.load("../pretrained_weights/slim_160_latest.pth", map_location="cpu"))
 model.eval()
