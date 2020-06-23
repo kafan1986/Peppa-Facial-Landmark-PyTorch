@@ -10,7 +10,7 @@ from tqdm import tqdm
 i decide to merge more data from CelebA, the data anns will be complex, so json maybe a better way. 
 '''
 
-data_dir = 'H:/datasets/300W_All_Orig'  ########points to your director,300w
+data_dir = '/home/ubuntu/300W_LP_Out'  ########points to your director,300w
 
 train_json = 'train.json'
 val_json = 'val.json'
