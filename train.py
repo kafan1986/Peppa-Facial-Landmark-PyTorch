@@ -149,7 +149,8 @@ if __name__ == '__main__':
     model = Slim()
     model.train()
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    if torch.cuda.device_count() > 1:print("Let's use", torch.cuda.device_count(), "GPUs!"):
+    if torch.cuda.device_count() > 1:
+        print("Let's use", torch.cuda.device_count(), "GPUs!"):
         model = nn.DataParallel(model)
     model.to(device)
     #model.cuda()
