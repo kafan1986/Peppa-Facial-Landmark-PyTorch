@@ -81,6 +81,6 @@ class Slim(nn.Module):
 if __name__ == '__main__':
     model = Slim()
     model.eval()
-    x = torch.randn(1, 3, 160, 160)
+    x = torch.randn(1, 3, 96, 96)
     flops, params = profile(model, inputs=(x,))
     print(flops)
