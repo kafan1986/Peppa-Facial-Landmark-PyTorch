@@ -37,7 +37,7 @@ class data_info(object):
 
 
 class Landmark(Dataset):
-    def __init__(self, ann_file, input_size=(160, 160), training_flag=True):
+    def __init__(self, ann_file, input_size=(96, 96), training_flag=True):
         super(Landmark, self).__init__()
         self.counter = 0
         self.time_counter = 0
