@@ -13,10 +13,10 @@ weight_decay_factor = 5.e-4
 l2_regularization = weight_decay_factor
 if "win32" in sys.platform:
     input_size = (96, 96)
-    batch_size = 2048
+    batch_size = 3072
 else:
     input_size = (96, 96)
-    batch_size = 2048
+    batch_size = 3072
 
 
 class Metrics:
