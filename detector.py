@@ -8,9 +8,9 @@ import time
 
 
 class Detector:
-    def __init__(self, detection_size=(160, 160)):
+    def __init__(self, detection_size=(96, 96)):
         self.model = Slim()
-        self.model.load_state_dict(torch.load(open("pretrained_weights/slim_160_latest.pth", "rb"), map_location="cpu"))
+        self.model.load_state_dict(torch.load(open("pretrained_weights/slim_96_latest.pth", "rb"), map_location="cpu"))
         self.model.eval()
         self.model.cuda()
         self.tracker = Tracker()
