@@ -14,7 +14,7 @@ data_dir = 'H:/datasets/300W_All_Orig'  ########points to your director,300w
 
 train_json = 'train.json'
 val_json = 'val.json'
-img_size = 160
+img_size = 96
 eye_close_thres = 0.02
 mouth_close_thres = 0.02
 big_mouth_open_thres = 0.08
