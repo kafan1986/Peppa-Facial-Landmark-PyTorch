@@ -8,8 +8,8 @@ import onnxruntime as rt
 
 
 class Detector:
-    def __init__(self, detection_size=(160, 160)):
-        self.sess = rt.InferenceSession("pretrained_weights/slim_160_latest.onnx")
+    def __init__(self, detection_size=(96, 96)):
+        self.sess = rt.InferenceSession("pretrained_weights/slim_96_latest.onnx")
         self.input_name = self.sess.get_inputs()[0].name
         self.detection_size = detection_size
         self.tracker = Tracker()
