@@ -142,9 +142,9 @@ if __name__ == '__main__':
     checkpoint = None
     torch.backends.cudnn.benchmark = True
     train_dataset = Landmark("train.json", input_size, True)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=4)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=12)
     val_dataset = Landmark("val.json", input_size, False)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=4)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=12)
 
     model = Slim()
     model.train()
