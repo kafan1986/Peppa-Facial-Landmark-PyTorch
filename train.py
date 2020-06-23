@@ -3,6 +3,7 @@ from torch.utils.data import DataLoader
 from datasets.landmark import Landmark
 from utils.wing_loss import WingLoss
 from models.slim import Slim
+import torch.nn as nn
 import sys
 import time
 from utils.consoler import rewrite, next_line
