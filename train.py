@@ -10,7 +10,7 @@ from utils.consoler import rewrite, next_line
 
 lr_decay_every_epoch = [1, 25, 35, 75, 150]
 #lr_value_every_epoch = [0.00001, 0.0001, 0.00005, 0.00001, 0.000001] # Original Values
-lr_value_every_epoch = [0.00005, 0.0005, 0.00025, 0.00005, 0.000005]
+lr_value_every_epoch = [0.00005, 0.0005, 0.00005, 0.00005, 0.000005]
 #lr_value_every_epoch = [0.0001, 0.001, 0.0005, 0.0001, 0.00001]
 weight_decay_factor = 5.e-4
 l2_regularization = weight_decay_factor
