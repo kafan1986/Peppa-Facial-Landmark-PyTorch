@@ -8,7 +8,7 @@ import sys
 import time
 from utils.consoler import rewrite, next_line
 
-lr_decay_every_epoch = [1, 20, 30, 75, 150]
+lr_decay_every_epoch = [1, 20, 30, 35, 40]
 #lr_value_every_epoch = [0.00001, 0.0001, 0.00005, 0.00001, 0.000001] # Original Values
 lr_value_every_epoch = [0.00005, 0.0005, 0.00005, 0.00001, 0.000001]
 #lr_value_every_epoch = [0.0001, 0.001, 0.0005, 0.0001, 0.00001]
