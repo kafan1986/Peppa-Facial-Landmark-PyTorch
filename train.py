@@ -142,6 +142,8 @@ def eval(epoch):
 
 if __name__ == '__main__':
     checkpoint = None
+    if len(sys.argv) > 1:
+        checkpoint = sys.argv[1]
     torch.backends.cudnn.benchmark = True
     train_dataset = Landmark("train.json", input_size, True)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=24)
