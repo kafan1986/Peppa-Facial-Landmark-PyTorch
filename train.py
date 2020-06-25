@@ -9,9 +9,9 @@ import time
 from utils.consoler import rewrite, next_line
 
 #lr_decay_every_epoch = [1, 25, 35, 75, 150] # Original Values
-lr_decay_every_epoch = [1, 55, 65, 75, 150] #
+lr_decay_every_epoch = [1, 55, 65, 70, 150] #
 #lr_value_every_epoch = [0.00001, 0.0001, 0.00005, 0.00001, 0.000001] # Original Values
-lr_value_every_epoch = [0.00004, 0.0004, 0.0002, 0.00004, 0.000004]
+lr_value_every_epoch = [0.00004, 0.0004, 0.0002, 0.00004, 0.000001]
 #lr_value_every_epoch = [0.0001, 0.001, 0.0005, 0.0001, 0.00001]
 weight_decay_factor = 5.e-4
 l2_regularization = weight_decay_factor
